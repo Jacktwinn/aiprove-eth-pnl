@@ -1,0 +1,26 @@
+bars=1440 capital=10000 USDT taker=0.05% maker=0.02% slippage_base=0.01% x |delta|
+
+Model A next-open/fixed-notional
+  net PnL after costs : +383.91 USDT (+3.84%)
+  final equity        : 10383.91 USDT
+  max drawdown        : 1.55%
+  total costs paid    : 23.80 USDT
+  fills (incl. final liquidation): 4
+    minute  844: +0 -> -1 @ 2004.40  cost 6.00
+    minute 1111: -1 -> +0 @ 1930.86  cost 5.78
+    minute 1323: +0 -> +1 @ 1952.62  cost 6.00
+    minute 1439: +1 -> +0 @ 1960.59  cost 6.02
+
+Model B close-fill/fraction-of-equity
+  net PnL after costs : +391.56 USDT (+3.92%)
+  final equity        : 10391.56 USDT
+  max drawdown        : 1.68%
+  total costs paid    : 24.68 USDT
+  fills (incl. final liquidation): 4
+    minute  843: +0 -> -1 @ 2004.32  cost 6.00
+    minute 1110: -1 -> +0 @ 1930.86  cost 6.22
+    minute 1322: +0 -> +1 @ 1952.62  cost 6.22
+    minute 1439: +1 -> +0 @ 1960.59  cost 6.24
+
+Stress x2 costs (Model A): net PnL +360.10 USDT, max DD 1.55%, fills 4
+Stress x3 costs (Model A): net PnL +336.30 USDT, max DD 1.64%, fills 4
